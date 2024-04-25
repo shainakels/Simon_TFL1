@@ -21,19 +21,19 @@
     function lightRed() {
       clearLights();
       document.getElementById('stopLight').style.backgroundColor = "red";
-      intervalId = setInterval(lightGreen, 60000 + Math.floor(Math.random() * 30000)); //RED > GREEN
+      intervalId = setInterval(lightGreen, 6000 + Math.floor(Math.random() * 3000)); //RED > GREEN
     }
 
     function lightYellow() {
       clearLights();
       document.getElementById('slowLight').style.backgroundColor = "yellow";
-      intervalId = setInterval(lightRed, 60000 + Math.floor(Math.random() * 30000)); // YELLOW > RED
+      intervalId = setInterval(lightRed, 6000 + Math.floor(Math.random() * 3000)); // YELLOW > RED
     }
 
     function lightGreen() {
       clearLights();
       document.getElementById('goLight').style.backgroundColor = "green";
-      intervalId = setInterval(lightYellow, 60000 + Math.floor(Math.random() * 30000)); //GREEN > YELLOW
+      intervalId = setInterval(lightYellow, 6000 + Math.floor(Math.random() * 3000)); //GREEN > YELLOW
     }
 
     function clearLights() {
